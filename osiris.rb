@@ -5,11 +5,11 @@
 class Osiris < Formula
   desc ""
   homepage "https://github.com/Voldemat/osiris"
-  version "0.7.5"
+  version "0.7.6"
 
   on_macos do
-    url "https://github.com/Voldemat/osiris/releases/download/0.7.5/osiris_0.7.5_darwin_all.tar.gz"
-    sha256 "c6ef611e32d3a3a32fc02d137eea5e37231a954e130235039fbee9f1e965efca"
+    url "https://github.com/Voldemat/osiris/releases/download/0.7.6/osiris_0.7.6_darwin_all.tar.gz"
+    sha256 "e3decb1c8fe878da3a66277b15a8bfc784a68e3f79b1cc7e1ad21dfd8e85d1f9"
 
     def install
       bin.install "osiris"
@@ -18,16 +18,16 @@ class Osiris < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Voldemat/osiris/releases/download/0.7.5/osiris_0.7.5_linux_arm64.tar.gz"
-      sha256 "4f46f2e6127c583dc5842e06bf87b079d876df7cdc027897cbf8e992e085b9ff"
+      url "https://github.com/Voldemat/osiris/releases/download/0.7.6/osiris_0.7.6_linux_arm64.tar.gz"
+      sha256 "da669eb1c57ce886d2a1f4fb0969133e64171c38eb80829a8823b98cfb289d83"
 
       def install
         bin.install "osiris"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Voldemat/osiris/releases/download/0.7.5/osiris_0.7.5_linux_amd64.tar.gz"
-      sha256 "e07a65aa092e0f30a6ddfa22e914dbcb362844aa0ab09709c2ec68d7d8e58064"
+      url "https://github.com/Voldemat/osiris/releases/download/0.7.6/osiris_0.7.6_linux_amd64.tar.gz"
+      sha256 "3e14849e03df9c52b47a5036d85913aba602cb9fe012b926310fc2633f008593"
 
       def install
         bin.install "osiris"
